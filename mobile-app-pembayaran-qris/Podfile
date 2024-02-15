@@ -16,13 +16,11 @@ end
 
 target 'mobile-app-pembayaran-qris' do
   shared_pod
+  
+  target 'mobile-app-pembayaran-qris-tests' do
+    inherit! :search_paths
+  end
 end
-
-target 'mobile-app-pembayaran-qris-tests' do
-  shared_pod
-end
-
-link_with 'mobile-app-pembayaran-qris', 'mobile-app-pembayaran-qris-tests'
 
 target 'core' do
   project '../core/core'

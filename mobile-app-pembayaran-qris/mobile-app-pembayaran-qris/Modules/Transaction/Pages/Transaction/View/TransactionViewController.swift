@@ -86,7 +86,7 @@ class TransactionViewController: BaseViewController, TransactionViewControllerPr
     
     @IBAction func didTapContinue(_ sender: Any) {
         if var data = trxData {
-            data.date = Date.now
+            data.date = Date()
             self.presenter.createTransaction(data)
         } else {
             self.showAlert(title: Wording.error.uppercased(), message: Wording.systemError.capitalized)

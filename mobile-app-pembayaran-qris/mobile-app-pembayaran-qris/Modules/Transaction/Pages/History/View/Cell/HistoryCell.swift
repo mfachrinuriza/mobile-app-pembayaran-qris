@@ -32,7 +32,7 @@ class HistoryCell: UICollectionViewCell {
         self.merchantName.text = trx.merchantName
         self.paymentMethod.text = trx.paymentMethod
         self.transactionID.text = trx.transactionId
-        self.date.text = DateTime.getDateStringFromDate(date: trx.date ?? Date.now)
+        self.date.text = DateTime.getDateStringFromDate(date: trx.date ?? Date())
     }
 
 }

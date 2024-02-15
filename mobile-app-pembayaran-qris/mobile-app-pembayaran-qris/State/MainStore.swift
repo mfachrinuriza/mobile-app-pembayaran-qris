@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Verge
 import core
 
 //class MainStore: Store<AppState, AppActivity> {

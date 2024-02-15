@@ -63,7 +63,7 @@ class TransactionDetailViewController: BaseViewController, TransactionDetailView
     }
     
     func update(with trx: Transaction) {
-        self.trxDate.text = DateTime.getDateStringFromDate(date: trx.date ?? Date.now)
+        self.trxDate.text = DateTime.getDateStringFromDate(date: trx.date ?? Date())
         self.trxId.text = trx.transactionId
         self.merchantName.text = trx.merchantName
         self.amount.text = "\(trx.amount?.f(.currency) ?? "")"

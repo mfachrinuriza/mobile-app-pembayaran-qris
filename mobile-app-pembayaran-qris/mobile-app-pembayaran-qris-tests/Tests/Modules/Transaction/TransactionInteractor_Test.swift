@@ -20,6 +20,7 @@ final class TransactionInteractor_Test: XCTestCase {
         container.autoregister(SecureStorageProtocol.self, initializer: SecureStorage.init)
 
         // Home Interactor
+        container.autoregister(HomeInteractorProtocol.self, initializer: HomeInteractor.init)
         container.autoregister(TransactionInteractorProtocol.self, initializer: TransactionInteractor.init)
     }
     
@@ -43,7 +44,7 @@ final class TransactionInteractor_Test: XCTestCase {
             )
         )
         
-        let transaction = storage.get(key: "transaction", type: Transaction.self)
+        let transaction = storage.get(key: "transaction", type: [Transaction].self)
         XCTAssertNotNil(transaction)
         
         let amount = storage.get(key: "amount", type: Double.self)

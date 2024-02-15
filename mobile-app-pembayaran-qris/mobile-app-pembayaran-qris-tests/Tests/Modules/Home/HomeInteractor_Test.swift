@@ -27,8 +27,9 @@ final class HomeInteractor_Test: XCTestCase {
         container.removeAll()
     }
     
-    func test_getAmount_success() async throws {
+    func test_getAmount_success() {
         let sut = container ~> HomeInteractorProtocol.self
+        sut.setAmount()
         let amount = sut.getAmount()
         
         XCTAssertEqual(100000, amount)

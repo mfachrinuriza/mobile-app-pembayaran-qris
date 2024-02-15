@@ -28,12 +28,6 @@
 		4A5F381C2B7DBBEC0026E9B4 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F381B2B7DBBEC0026E9B4 /* FileReader.swift */; };
 		4A5F381F2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F381E2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift */; };
 		4A5F38232B7DC1210026E9B4 /* TransactionInteractor_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F38222B7DC1210026E9B4 /* TransactionInteractor_Test.swift */; };
-		4A5F38472B7DE68C0026E9B4 /* core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38462B7DE68C0026E9B4 /* core.framework */; };
-		4A5F38482B7DE68C0026E9B4 /* core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38462B7DE68C0026E9B4 /* core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A5F384B2B7DE8450026E9B4 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38492B7DE8450026E9B4 /* Swinject.framework */; };
-		4A5F384C2B7DE8450026E9B4 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38492B7DE8450026E9B4 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A5F384D2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */; };
-		4A5F384E2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AE132DA2B7B22B50011265B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132D92B7B22B50011265B /* AppDelegate.swift */; };
 		4AE132E42B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132E22B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld */; };
 		4AE132E92B7B22B80011265B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE132E72B7B22B80011265B /* LaunchScreen.storyboard */; };
@@ -55,7 +49,7 @@
 		4AE133602B7BBC290011265B /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1335F2B7BBC290011265B /* TransactionInteractor.swift */; };
 		4AE133622B7BBC660011265B /* TransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE133612B7BBC660011265B /* TransactionPresenter.swift */; };
 		4AE133642B7BBCA70011265B /* TransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE133632B7BBCA70011265B /* TransactionRouter.swift */; };
-		95C975AE92E6A5676C9A9AF4 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6814011978DE874285401962 /* Pods_mobile_app_pembayaran_qris_tests.framework */; };
+		ABD722D433AAF924DF0A6F51 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6814011978DE874285401962 /* Pods_mobile_app_pembayaran_qris_tests.framework */; };
 		BB490775F6C95466E6401806 /* Pods_mobile_app_pembayaran_qris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8690A66B439379514401BFB /* Pods_mobile_app_pembayaran_qris.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,19 +71,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4A5F373E2B7D14120026E9B4 /* core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A5F38452B7DCB010026E9B4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4A5F384E2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Embed Frameworks */,
-				4A5F38482B7DE68C0026E9B4 /* core.framework in Embed Frameworks */,
-				4A5F384C2B7DE8450026E9B4 /* Swinject.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,10 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5F384B2B7DE8450026E9B4 /* Swinject.framework in Frameworks */,
-				4A5F384D2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Frameworks */,
-				95C975AE92E6A5676C9A9AF4 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */,
-				4A5F38472B7DE68C0026E9B4 /* core.framework in Frameworks */,
+				ABD722D433AAF924DF0A6F51 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,8 +524,6 @@
 				4A5F38072B7DB2ED0026E9B4 /* Sources */,
 				4A5F38082B7DB2ED0026E9B4 /* Frameworks */,
 				4A5F38092B7DB2ED0026E9B4 /* Resources */,
-				4A5F38452B7DCB010026E9B4 /* Embed Frameworks */,
-				E186FEE31793023D7529D69D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -686,23 +662,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E186FEE31793023D7529D69D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E944AE775B8D42E9154AFD81 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +760,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 734TWANFD2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -820,6 +780,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 734TWANFD2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -967,6 +928,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -999,6 +961,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
