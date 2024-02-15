@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import core
 
 protocol TransactionHistoryInteractorProtocol: AnyObject {
     func getTransactionHistory() -> [Transaction]

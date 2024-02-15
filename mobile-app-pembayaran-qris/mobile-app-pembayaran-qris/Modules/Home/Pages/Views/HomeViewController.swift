@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import core
 
 protocol HomeViewControllerProtocol where Self: UIViewController {
     var presenter: HomePresenterProtocol { get }
@@ -21,6 +22,8 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var maskView: UIImageView!
     @IBOutlet weak var flashIcon: UIButton!
+    
+    @IBOutlet weak var amount: UILabel!
     
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
@@ -52,6 +55,7 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         if (captureSession?.isRunning == false) {
             DispatchQueue.global(qos: .background).async { [weak self] in
@@ -71,12 +75,12 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
     }
     
     private func setupUI() {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
         maskView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             maskView.heightAnchor.constraint(equalTo: maskView.widthAnchor)
         ])
+        
+        self.flashIcon.setImage(UIImage(named: "ic_bolt_slash", in: Bundle(identifier: CoreBundle.getIdentifier()), compatibleWith: nil), for: .normal)
     }
 
     private func setupCamera() {
@@ -150,10 +154,10 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
                 
                 if self.presenter.isFlashOn.value {
                     device.torchMode = .on
-                    self.flashIcon.setImage(UIImage(named: "ic_bolt"), for: .normal)
+                    self.flashIcon.setImage(UIImage(named: "ic_bolt", in: Bundle(identifier: CoreBundle.getIdentifier()), compatibleWith: nil), for: .normal)
                 } else {
                     device.torchMode = .off
-                    self.flashIcon.setImage(UIImage(named: "ic_bolt_slash"), for: .normal)
+                    self.flashIcon.setImage(UIImage(named: "ic_bolt_slash", in: Bundle(identifier: CoreBundle.getIdentifier()), compatibleWith: nil), for: .normal)
                 }
                 
                 device.unlockForConfiguration()

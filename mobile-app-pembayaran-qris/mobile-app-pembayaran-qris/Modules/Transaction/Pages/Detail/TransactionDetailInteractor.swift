@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import core
 
 protocol TransactionDetailInteractorProtocol: AnyObject {
     func getTransactionDetail(_ idTrx: String) -> Transaction

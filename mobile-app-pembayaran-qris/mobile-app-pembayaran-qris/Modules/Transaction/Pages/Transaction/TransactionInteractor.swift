@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import core
 
 protocol TransactionInteractorProtocol: AnyObject {
     func createTransaction(_ request: Transaction) -> Void

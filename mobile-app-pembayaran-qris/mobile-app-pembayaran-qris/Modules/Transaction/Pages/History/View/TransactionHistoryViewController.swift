@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import core
 
 
 protocol TransactionHistoryViewControllerProtocol where Self: UIViewController {
@@ -20,6 +21,8 @@ class TransactionHistoryViewController: BaseViewController, TransactionHistoryVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var emptyState: UIStackView!
+    @IBOutlet weak var emptyImage: UIImageView!
+    
     var presenter: TransactionHistoryPresenterProtocol
     var router: TransactionHistoryRouterProtocol
     
@@ -41,7 +44,7 @@ class TransactionHistoryViewController: BaseViewController, TransactionHistoryVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +59,9 @@ class TransactionHistoryViewController: BaseViewController, TransactionHistoryVi
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: HistoryCell.cellIdentifier, bundle: nil), forCellWithReuseIdentifier: HistoryCell.cellIdentifier)
+        
+        self.emptyImage.image = UIImage(named: "ic_empty", in: Bundle(identifier: CoreBundle.getIdentifier()), compatibleWith: nil)
+        
     }
     
     func loadData() {

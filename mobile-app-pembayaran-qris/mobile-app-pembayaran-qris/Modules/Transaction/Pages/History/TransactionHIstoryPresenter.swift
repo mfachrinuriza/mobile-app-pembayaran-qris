@@ -5,10 +5,9 @@
 //  Created by Muhammad Fachri Nuriza on 14/02/24.
 //
 
-import UIKit
-
 import Foundation
 import Combine
+import core
 
 protocol TransactionHistoryPresenterProtocol: AnyObject {
     var interactor: TransactionHistoryInteractorProtocol { get }

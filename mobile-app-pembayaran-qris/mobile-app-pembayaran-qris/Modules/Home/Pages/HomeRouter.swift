@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import core
 
 protocol HomeRouterProtocol: AnyObject {
     var view: HomeViewControllerProtocol? { get set }

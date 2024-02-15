@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import core
 
 protocol TransactionPresenterProtocol: AnyObject {
     var interactor: TransactionInteractorProtocol { get }

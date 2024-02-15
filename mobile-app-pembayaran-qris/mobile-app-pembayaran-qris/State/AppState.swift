@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import Verge
+import core
+
+//struct AppState: Equatable {
+//    var transaction: [Transaction]?
+//}

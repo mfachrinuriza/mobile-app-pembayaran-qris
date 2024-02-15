@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="mobile_app_pembayaran_qris" customModuleProvider="target">
             <connections>
+                <outlet property="amount" destination="Ws9-gP-yYr" id="s9L-sM-L1S"/>
                 <outlet property="cameraView" destination="O5L-XY-akY" id="Bfz-Vr-5e9"/>
                 <outlet property="flashIcon" destination="1Qy-gY-ctO" id="2d7-Mv-QCe"/>
                 <outlet property="maskView" destination="GQt-js-OlF" id="sO6-MH-MJB"/>
@@ -33,7 +34,7 @@
                     <rect key="frame" x="0.0" y="50" width="375" height="728"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gRr-ba-aY9" userLabel="header">
-                            <rect key="frame" x="16" y="16" width="343" height="69"/>
+                            <rect key="frame" x="16" y="16" width="343" height="98"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang, User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lx-8A-YSv">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="17"/>
@@ -68,11 +69,17 @@
                                         <constraint firstAttribute="height" constant="40" id="HWH-89-jaO"/>
                                     </constraints>
                                 </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws9-gP-yYr">
+                                    <rect key="frame" x="0.0" y="81" width="343" height="17"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                    <color key="textColor" name="black10"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTl-13-x8R">
-                            <rect key="frame" x="16" y="85" width="343" height="447"/>
+                            <rect key="frame" x="16" y="114" width="343" height="447"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXp-7y-rGV">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>

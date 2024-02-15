@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import core
 
 protocol HomeInteractorProtocol: AnyObject {
     func createTransaction(_ request: Transaction) -> Void

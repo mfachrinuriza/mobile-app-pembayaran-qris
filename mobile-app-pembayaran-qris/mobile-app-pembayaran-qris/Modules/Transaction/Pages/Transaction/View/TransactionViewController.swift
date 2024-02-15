@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import core
 
 protocol TransactionViewControllerProtocol where Self: UIViewController {
     var presenter: TransactionPresenterProtocol { get }

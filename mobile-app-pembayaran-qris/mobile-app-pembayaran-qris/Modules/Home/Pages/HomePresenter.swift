@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import core
 
 protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorProtocol { get }
