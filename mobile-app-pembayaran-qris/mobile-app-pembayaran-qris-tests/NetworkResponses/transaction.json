@@ -1,0 +1,6 @@
+{
+  "transactionId": "ID12345678",
+  "paymentMethod": "BNI",
+  "merchantName": "MERCHANT MOCK TEST",
+  "amount": "50000"
+}

@@ -24,7 +24,16 @@
 		4A5F374B2B7D179C0026E9B4 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374A2B7D179C0026E9B4 /* MainStore.swift */; };
 		4A5F374D2B7D17D00026E9B4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374C2B7D17D00026E9B4 /* AppState.swift */; };
 		4A5F37502B7D18BE0026E9B4 /* AppDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374F2B7D18BE0026E9B4 /* AppDispatcher.swift */; };
-		4A5F380E2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */; };
+		4A5F38192B7DBBBC0026E9B4 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5F38182B7DBBBC0026E9B4 /* transaction.json */; };
+		4A5F381C2B7DBBEC0026E9B4 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F381B2B7DBBEC0026E9B4 /* FileReader.swift */; };
+		4A5F381F2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F381E2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift */; };
+		4A5F38232B7DC1210026E9B4 /* TransactionInteractor_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F38222B7DC1210026E9B4 /* TransactionInteractor_Test.swift */; };
+		4A5F38472B7DE68C0026E9B4 /* core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38462B7DE68C0026E9B4 /* core.framework */; };
+		4A5F38482B7DE68C0026E9B4 /* core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38462B7DE68C0026E9B4 /* core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A5F384B2B7DE8450026E9B4 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38492B7DE8450026E9B4 /* Swinject.framework */; };
+		4A5F384C2B7DE8450026E9B4 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F38492B7DE8450026E9B4 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A5F384D2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */; };
+		4A5F384E2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AE132DA2B7B22B50011265B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132D92B7B22B50011265B /* AppDelegate.swift */; };
 		4AE132E42B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132E22B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld */; };
 		4AE132E92B7B22B80011265B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE132E72B7B22B80011265B /* LaunchScreen.storyboard */; };
@@ -46,6 +55,7 @@
 		4AE133602B7BBC290011265B /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1335F2B7BBC290011265B /* TransactionInteractor.swift */; };
 		4AE133622B7BBC660011265B /* TransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE133612B7BBC660011265B /* TransactionPresenter.swift */; };
 		4AE133642B7BBCA70011265B /* TransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE133632B7BBCA70011265B /* TransactionRouter.swift */; };
+		95C975AE92E6A5676C9A9AF4 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6814011978DE874285401962 /* Pods_mobile_app_pembayaran_qris_tests.framework */; };
 		BB490775F6C95466E6401806 /* Pods_mobile_app_pembayaran_qris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8690A66B439379514401BFB /* Pods_mobile_app_pembayaran_qris.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +81,19 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A5F38452B7DCB010026E9B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A5F384E2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Embed Frameworks */,
+				4A5F38482B7DE68C0026E9B4 /* core.framework in Embed Frameworks */,
+				4A5F384C2B7DE8450026E9B4 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +115,15 @@
 		4A5F374C2B7D17D00026E9B4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4A5F374F2B7D18BE0026E9B4 /* AppDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDispatcher.swift; sourceTree = "<group>"; };
 		4A5F380B2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-app-pembayaran-qris-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_app_pembayaran_qris_tests.swift; sourceTree = "<group>"; };
+		4A5F38182B7DBBBC0026E9B4 /* transaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transaction.json; sourceTree = "<group>"; };
+		4A5F381B2B7DBBEC0026E9B4 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		4A5F381E2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor_Test.swift; sourceTree = "<group>"; };
+		4A5F38222B7DC1210026E9B4 /* TransactionInteractor_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor_Test.swift; sourceTree = "<group>"; };
+		4A5F383F2B7DCB000026E9B4 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5F38402B7DCB000026E9B4 /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwinjectAutoregistration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5F38462B7DE68C0026E9B4 /* core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5F38492B7DE8450026E9B4 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwinjectAutoregistration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE132D62B7B22B50011265B /* mobile-app-pembayaran-qris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-app-pembayaran-qris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE132D92B7B22B50011265B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE132E32B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobile_app_pembayaran_qris.xcdatamodel; sourceTree = "<group>"; };
@@ -116,8 +147,11 @@
 		4AE1335F2B7BBC290011265B /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
 		4AE133612B7BBC660011265B /* TransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPresenter.swift; sourceTree = "<group>"; };
 		4AE133632B7BBCA70011265B /* TransactionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRouter.swift; sourceTree = "<group>"; };
+		5D3711382165E0422BD5EC1D /* Pods-mobile-app-pembayaran-qris-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-app-pembayaran-qris-tests.debug.xcconfig"; path = "Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6814011978DE874285401962 /* Pods_mobile_app_pembayaran_qris_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_app_pembayaran_qris_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BC5B4AFFF16BC0DC6FD5F6 /* Pods-mobile-app-pembayaran-qris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-app-pembayaran-qris.debug.xcconfig"; path = "Target Support Files/Pods-mobile-app-pembayaran-qris/Pods-mobile-app-pembayaran-qris.debug.xcconfig"; sourceTree = "<group>"; };
 		C8690A66B439379514401BFB /* Pods_mobile_app_pembayaran_qris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_app_pembayaran_qris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D563AC2DF915571F406B45 /* Pods-mobile-app-pembayaran-qris-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-app-pembayaran-qris-tests.release.xcconfig"; path = "Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +159,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5F384B2B7DE8450026E9B4 /* Swinject.framework in Frameworks */,
+				4A5F384D2B7DE8450026E9B4 /* SwinjectAutoregistration.framework in Frameworks */,
+				95C975AE92E6A5676C9A9AF4 /* Pods_mobile_app_pembayaran_qris_tests.framework in Frameworks */,
+				4A5F38472B7DE68C0026E9B4 /* core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +183,8 @@
 			children = (
 				B3BC5B4AFFF16BC0DC6FD5F6 /* Pods-mobile-app-pembayaran-qris.debug.xcconfig */,
 				0FBF7E095359B86AAF70C7C8 /* Pods-mobile-app-pembayaran-qris.release.xcconfig */,
+				5D3711382165E0422BD5EC1D /* Pods-mobile-app-pembayaran-qris-tests.debug.xcconfig */,
+				F0D563AC2DF915571F406B45 /* Pods-mobile-app-pembayaran-qris-tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,8 +254,9 @@
 		4A5F380C2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests */ = {
 			isa = PBXGroup;
 			children = (
-				4A5F38142B7DB2FA0026E9B4 /* Modules */,
-				4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */,
+				4A5F38152B7DBA9B0026E9B4 /* NetworkResponses */,
+				4A5F381A2B7DBBE00026E9B4 /* Helper */,
+				4A5F381D2B7DBBFF0026E9B4 /* Tests */,
 			);
 			path = "mobile-app-pembayaran-qris-tests";
 			sourceTree = "<group>";
@@ -223,8 +264,50 @@
 		4A5F38142B7DB2FA0026E9B4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4A5F38212B7DC1090026E9B4 /* Transaction */,
+				4A5F38202B7DC0CD0026E9B4 /* Home */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		4A5F38152B7DBA9B0026E9B4 /* NetworkResponses */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F38182B7DBBBC0026E9B4 /* transaction.json */,
+			);
+			path = NetworkResponses;
+			sourceTree = "<group>";
+		};
+		4A5F381A2B7DBBE00026E9B4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F381B2B7DBBEC0026E9B4 /* FileReader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4A5F381D2B7DBBFF0026E9B4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F38142B7DB2FA0026E9B4 /* Modules */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4A5F38202B7DC0CD0026E9B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F381E2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A5F38212B7DC1090026E9B4 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F38222B7DC1210026E9B4 /* TransactionInteractor_Test.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		4AE132CD2B7B22B50011265B = {
@@ -440,8 +523,14 @@
 		DE4EF32A83FD0EBCFBFE7F5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A5F38492B7DE8450026E9B4 /* Swinject.framework */,
+				4A5F384A2B7DE8450026E9B4 /* SwinjectAutoregistration.framework */,
+				4A5F38462B7DE68C0026E9B4 /* core.framework */,
+				4A5F383F2B7DCB000026E9B4 /* Swinject.framework */,
+				4A5F38402B7DCB000026E9B4 /* SwinjectAutoregistration.framework */,
 				4A5F373C2B7D14120026E9B4 /* core.framework */,
 				C8690A66B439379514401BFB /* Pods_mobile_app_pembayaran_qris.framework */,
+				6814011978DE874285401962 /* Pods_mobile_app_pembayaran_qris_tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -453,9 +542,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5F38132B7DB2EE0026E9B4 /* Build configuration list for PBXNativeTarget "mobile-app-pembayaran-qris-tests" */;
 			buildPhases = (
+				64871712414CA169501E7244 /* [CP] Check Pods Manifest.lock */,
 				4A5F38072B7DB2ED0026E9B4 /* Sources */,
 				4A5F38082B7DB2ED0026E9B4 /* Frameworks */,
 				4A5F38092B7DB2ED0026E9B4 /* Resources */,
+				4A5F38452B7DCB010026E9B4 /* Embed Frameworks */,
+				E186FEE31793023D7529D69D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -530,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5F38192B7DBBBC0026E9B4 /* transaction.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +664,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		64871712414CA169501E7244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-app-pembayaran-qris-tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E186FEE31793023D7529D69D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobile-app-pembayaran-qris-tests/Pods-mobile-app-pembayaran-qris-tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E944AE775B8D42E9154AFD81 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,7 +727,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5F380E2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift in Sources */,
+				4A5F381C2B7DBBEC0026E9B4 /* FileReader.swift in Sources */,
+				4A5F381F2B7DBCAD0026E9B4 /* HomeInteractor_Test.swift in Sources */,
+				4A5F38232B7DC1210026E9B4 /* TransactionInteractor_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,10 +794,12 @@
 /* Begin XCBuildConfiguration section */
 		4A5F38112B7DB2EE0026E9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3711382165E0422BD5EC1D /* Pods-mobile-app-pembayaran-qris-tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 734TWANFD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
@@ -677,10 +813,12 @@
 		};
 		4A5F38122B7DB2EE0026E9B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D563AC2DF915571F406B45 /* Pods-mobile-app-pembayaran-qris-tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 734TWANFD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
