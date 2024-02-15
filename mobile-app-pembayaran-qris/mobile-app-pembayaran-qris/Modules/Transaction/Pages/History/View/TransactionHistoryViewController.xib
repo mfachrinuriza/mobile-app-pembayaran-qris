@@ -45,24 +45,25 @@
                     </subviews>
                 </stackView>
                 <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ruk-JL-tDv">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="16" y="75" width="361" height="727"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="scrollIndicatorInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cp7-nR-PCw">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="black70"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ruk-JL-tDv" secondAttribute="bottom" id="J4R-3x-0RT"/>
-                <constraint firstItem="Ruk-JL-tDv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lid-NG-DcK"/>
-                <constraint firstItem="Ruk-JL-tDv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NL1-eh-zhV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ruk-JL-tDv" secondAttribute="bottom" constant="16" id="J4R-3x-0RT"/>
+                <constraint firstItem="Ruk-JL-tDv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Lid-NG-DcK"/>
+                <constraint firstItem="Ruk-JL-tDv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="NL1-eh-zhV"/>
                 <constraint firstItem="tTE-xx-C1N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SKK-qA-yvG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ruk-JL-tDv" secondAttribute="trailing" id="SxG-gt-Em8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ruk-JL-tDv" secondAttribute="trailing" constant="16" id="SxG-gt-Em8"/>
                 <constraint firstItem="tTE-xx-C1N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o6G-OO-mQw"/>
             </constraints>
             <point key="canvasLocation" x="45" y="20"/>

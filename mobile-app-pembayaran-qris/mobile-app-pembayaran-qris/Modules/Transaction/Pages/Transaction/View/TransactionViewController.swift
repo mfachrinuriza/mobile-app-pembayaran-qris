@@ -15,6 +15,7 @@ protocol TransactionViewControllerProtocol where Self: UIViewController {
     var trxData: Transaction? { get set }
     
     func createTransactionSuccess()
+    func amountNotEnough()
 }
 
 class TransactionViewController: BaseViewController, TransactionViewControllerProtocol {
@@ -77,6 +78,10 @@ class TransactionViewController: BaseViewController, TransactionViewControllerPr
     
     func createTransactionSuccess() {
         self.router.presentTrasanctionDetail(trxData?.transactionId ?? "")
+    }
+    
+    func amountNotEnough() {
+        self.showAlert(title: Wording.error.uppercased(), message: Wording.saldoNotEnough.capitalized)
     }
     
     @IBAction func didTapContinue(_ sender: Any) {

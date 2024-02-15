@@ -16,7 +16,6 @@ protocol TransactionPresenterProtocol: AnyObject {
     var view: TransactionViewControllerProtocol? { get set }
 
     func createTransaction(_ request: Transaction)
-    
 }
 
 class TransactionPresenter: TransactionPresenterProtocol {
@@ -32,7 +31,11 @@ class TransactionPresenter: TransactionPresenterProtocol {
     }
     
     func createTransaction(_ request: Transaction) {
-        self.interactor.createTransaction(request)
-        self.router?.presentTrasanctionDetail(request.transactionId ?? "")
+        if self.interactor.getAmount() > 0 {
+            self.interactor.createTransaction(request)
+            self.router?.presentTrasanctionDetail(request.transactionId ?? "")
+        } else {
+            self.view?.amountNotEnough()
+        }
     }
 }

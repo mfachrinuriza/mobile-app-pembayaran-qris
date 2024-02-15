@@ -10,6 +10,7 @@ import core
 
 protocol TransactionInteractorProtocol: AnyObject {
     func createTransaction(_ request: Transaction) -> Void
+    func getAmount() -> Double
 }
 
 class TransactionInteractor: TransactionInteractorProtocol {
@@ -25,8 +26,19 @@ class TransactionInteractor: TransactionInteractorProtocol {
     }
     
     func createTransaction(_ request: Transaction) -> Void {
-        var list = storage.get(key: "transaction", type: [Transaction].self)
-        list?.append(request)
+        var list = storage.get(key: "transaction", type: [Transaction].self) ?? []
+        list.append(request)
         storage.set(key: "transaction", item: list)
+        onCalculateAmount(transaction: request)
+    }
+    
+    func onCalculateAmount(transaction: Transaction) {
+        var amount = getAmount()
+        amount = amount - (transaction.amount ?? 0)
+        storage.set(key: "amount", item: amount)
+    }
+    
+    func getAmount() -> Double {
+        return storage.get(key: "amount", type: Double.self) ?? 0
     }
 }

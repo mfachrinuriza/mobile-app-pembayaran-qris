@@ -24,6 +24,7 @@
 		4A5F374B2B7D179C0026E9B4 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374A2B7D179C0026E9B4 /* MainStore.swift */; };
 		4A5F374D2B7D17D00026E9B4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374C2B7D17D00026E9B4 /* AppState.swift */; };
 		4A5F37502B7D18BE0026E9B4 /* AppDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F374F2B7D18BE0026E9B4 /* AppDispatcher.swift */; };
+		4A5F380E2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */; };
 		4AE132DA2B7B22B50011265B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132D92B7B22B50011265B /* AppDelegate.swift */; };
 		4AE132E42B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE132E22B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodeld */; };
 		4AE132E92B7B22B80011265B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE132E72B7B22B80011265B /* LaunchScreen.storyboard */; };
@@ -47,6 +48,16 @@
 		4AE133642B7BBCA70011265B /* TransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE133632B7BBCA70011265B /* TransactionRouter.swift */; };
 		BB490775F6C95466E6401806 /* Pods_mobile_app_pembayaran_qris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8690A66B439379514401BFB /* Pods_mobile_app_pembayaran_qris.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A5F380F2B7DB2ED0026E9B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE132CE2B7B22B50011265B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE132D52B7B22B50011265B;
+			remoteInfo = "mobile-app-pembayaran-qris";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4A5F373F2B7D14130026E9B4 /* Embed Frameworks */ = {
@@ -80,6 +91,8 @@
 		4A5F374A2B7D179C0026E9B4 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 		4A5F374C2B7D17D00026E9B4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4A5F374F2B7D18BE0026E9B4 /* AppDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDispatcher.swift; sourceTree = "<group>"; };
+		4A5F380B2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-app-pembayaran-qris-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_app_pembayaran_qris_tests.swift; sourceTree = "<group>"; };
 		4AE132D62B7B22B50011265B /* mobile-app-pembayaran-qris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-app-pembayaran-qris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE132D92B7B22B50011265B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE132E32B7B22B60011265B /* mobile_app_pembayaran_qris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobile_app_pembayaran_qris.xcdatamodel; sourceTree = "<group>"; };
@@ -108,6 +121,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A5F38082B7DB2ED0026E9B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE132D32B7B22B50011265B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,10 +211,27 @@
 			path = Dispatcher;
 			sourceTree = "<group>";
 		};
+		4A5F380C2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F38142B7DB2FA0026E9B4 /* Modules */,
+				4A5F380D2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift */,
+			);
+			path = "mobile-app-pembayaran-qris-tests";
+			sourceTree = "<group>";
+		};
+		4A5F38142B7DB2FA0026E9B4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		4AE132CD2B7B22B50011265B = {
 			isa = PBXGroup;
 			children = (
 				4AE132D82B7B22B50011265B /* mobile-app-pembayaran-qris */,
+				4A5F380C2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests */,
 				4AE132D72B7B22B50011265B /* Products */,
 				2F603FBD78EBF4AAAF831A27 /* Pods */,
 				DE4EF32A83FD0EBCFBFE7F5A /* Frameworks */,
@@ -205,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE132D62B7B22B50011265B /* mobile-app-pembayaran-qris.app */,
+				4A5F380B2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -411,6 +449,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A5F380A2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5F38132B7DB2EE0026E9B4 /* Build configuration list for PBXNativeTarget "mobile-app-pembayaran-qris-tests" */;
+			buildPhases = (
+				4A5F38072B7DB2ED0026E9B4 /* Sources */,
+				4A5F38082B7DB2ED0026E9B4 /* Frameworks */,
+				4A5F38092B7DB2ED0026E9B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5F38102B7DB2ED0026E9B4 /* PBXTargetDependency */,
+			);
+			name = "mobile-app-pembayaran-qris-tests";
+			productName = "mobile-app-pembayaran-qris-tests";
+			productReference = 4A5F380B2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4AE132D52B7B22B50011265B /* mobile-app-pembayaran-qris */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE132ED2B7B22B80011265B /* Build configuration list for PBXNativeTarget "mobile-app-pembayaran-qris" */;
@@ -441,6 +497,10 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					4A5F380A2B7DB2ED0026E9B4 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 4AE132D52B7B22B50011265B;
+					};
 					4AE132D52B7B22B50011265B = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -460,11 +520,19 @@
 			projectRoot = "";
 			targets = (
 				4AE132D52B7B22B50011265B /* mobile-app-pembayaran-qris */,
+				4A5F380A2B7DB2ED0026E9B4 /* mobile-app-pembayaran-qris-tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A5F38092B7DB2ED0026E9B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE132D42B7B22B50011265B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -523,6 +591,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A5F38072B7DB2ED0026E9B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5F380E2B7DB2ED0026E9B4 /* mobile_app_pembayaran_qris_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE132D22B7B22B50011265B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -562,6 +638,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4A5F38102B7DB2ED0026E9B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE132D52B7B22B50011265B /* mobile-app-pembayaran-qris */;
+			targetProxy = 4A5F380F2B7DB2ED0026E9B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4AE132E72B7B22B80011265B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -574,6 +658,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A5F38112B7DB2EE0026E9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile-app-pembayaran-qris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mobile-app-pembayaran-qris";
+			};
+			name = Debug;
+		};
+		4A5F38122B7DB2EE0026E9B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.mobile-app-pembayaran-qris-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile-app-pembayaran-qris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mobile-app-pembayaran-qris";
+			};
+			name = Release;
+		};
 		4AE132EB2B7B22B80011265B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -760,6 +878,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A5F38132B7DB2EE0026E9B4 /* Build configuration list for PBXNativeTarget "mobile-app-pembayaran-qris-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5F38112B7DB2EE0026E9B4 /* Debug */,
+				4A5F38122B7DB2EE0026E9B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AE132D12B7B22B50011265B /* Build configuration list for PBXProject "mobile-app-pembayaran-qris" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

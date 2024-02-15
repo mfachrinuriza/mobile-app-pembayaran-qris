@@ -12,6 +12,8 @@ import core
 protocol HomeViewControllerProtocol where Self: UIViewController {
     var presenter: HomePresenterProtocol { get }
     var router: HomeRouterProtocol { get }
+    
+    func update(with amount: Double)
 }
 
 class HomeViewController: BaseViewController, HomeViewControllerProtocol {
@@ -57,6 +59,7 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
+        self.loadData()
         if (captureSession?.isRunning == false) {
             DispatchQueue.global(qos: .background).async { [weak self] in
                 self?.captureSession.startRunning()
@@ -74,6 +77,11 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
         }
     }
     
+    func loadData() {
+        self.presenter.setAmount()
+        self.presenter.getAmount()
+    }
+    
     private func setupUI() {
         maskView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -81,6 +89,10 @@ class HomeViewController: BaseViewController, HomeViewControllerProtocol {
         ])
         
         self.flashIcon.setImage(UIImage(named: "ic_bolt_slash", in: Bundle(identifier: CoreBundle.getIdentifier()), compatibleWith: nil), for: .normal)
+    }
+    
+    func update(with amount: Double) {
+        self.amount.text = "Saldo : \(amount.f(.currency))"
     }
 
     private func setupCamera() {

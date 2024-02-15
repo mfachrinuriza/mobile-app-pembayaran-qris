@@ -15,6 +15,9 @@ protocol HomePresenterProtocol: AnyObject {
     var router: HomeRouterProtocol? { get set }
     var view: HomeViewControllerProtocol? { get set }
     var isFlashOn: CurrentValueSubject<Bool, Never> { get }
+    
+    func setAmount()
+    func getAmount()
 }
 
 class HomePresenter: HomePresenterProtocol {
@@ -30,5 +33,15 @@ class HomePresenter: HomePresenterProtocol {
         interactor: HomeInteractorProtocol
     ) {
         self.interactor = interactor
+    }
+    
+    func setAmount() {
+        if interactor.getAmount() == 0 {
+            self.interactor.setAmount()
+        }
+    }
+    
+    func getAmount() {
+        self.view?.update(with: self.interactor.getAmount()) 
     }
 }
